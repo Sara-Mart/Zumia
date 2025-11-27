@@ -1,0 +1,164 @@
+
+/*Importamos la tipografia*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*Creamos variables para todo el proyecto*/
+
+:root{
+    --principal:#145e00;
+    --secundario:#E9EFC7;
+    --terciario:#A4B834;
+}
+
+/*Establecemos opciones de toda la actividad*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+
+    background-color:var(--secundario);
+
+}
+
+/*Todos los estilos del menu de navegación*/
+
+nav{
+    height: 10vh;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffffff;
+    box-shadow: 5px 5px 15px rgba(43, 165, 74, 0.571);
+    border-radius: 20px;
+}
+
+nav h1{
+
+    font-weight: 700;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+
+}
+
+nav ul li{
+    margin:0 30px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--principal);
+    font-weight: 600;
+    
+}
+
+#selected{
+    
+    border: solid 2px;
+    border-radius: 40px;
+    border-color: var(--principal);
+    padding: 5px;
+}
+
+.cliente{
+    
+    align-items: self-end;
+    
+}
+.cliente img{
+    width: 1.5rem;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+/*Contenido de la marca y la información del producto*/
+
+main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.marca{
+    padding-right: 50px;
+}
+
+.marca h2{
+    font-size: 4rem;
+    color: var(--terciario);
+    
+}
+
+.marca h1{
+    font-size: 10rem;
+    
+}
+
+.marca h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color:var(--terciario);
+}
+
+.marca p{
+    color: var(--principal);
+    margin-bottom: 20px;
+}
+
+.producto{
+    padding: 10px;
+    width: 500px;
+    height: 550px;
+    background-color:#ffffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(11, 11, 11, 0.571);
+
+    
+}
+.producto img{
+
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-bottom:20px;
+}
+
+.producto p{
+    font-size:0.7em;
+    color: var(--principal);
+    margin-bottom:10px;
+}
+
+.marca button{
+    background-color: #ffffffff;
+}
+button{
+
+    background-color:var(--secundario);
+    color: var(--principal);
+    box-shadow: 5px 5px 15px rgba(43, 165, 74, 0.571);
+    border-radius: 20px;
+    padding: 7px;
+    font-weight:600;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+}
+
+button:hover{
+
+    border: 2px solid;
+}
