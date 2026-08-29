@@ -1,9 +1,14 @@
 
-/*Importamos la tipografia*/
+/* =========================================================
+  TIPOGRAFÍA
+   ========================================================= */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/*Creamos variables para todo el proyecto*/
+/* =========================================================
+    VARIABLES
+   ========================================================= */
 
 :root{
     --principal:#145e00;
@@ -11,7 +16,10 @@
     --terciario:#A4B834;
 }
 
-/*Establecemos opciones de toda la actividad*/
+/* =========================================================
+   OPCIONES DE ESTILO TODA LA WEB
+   ========================================================= */ 
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -28,7 +36,9 @@ body{
 
 }
 
-/*Todos los estilos del menu de navegación*/
+/* =========================================================
+   MENU NAVEGACIÓN
+   ========================================================= */
 
 nav{
     height: 10vh;
@@ -72,6 +82,10 @@ nav ul li a{
     padding: 5px;
 }
 
+/* =========================================================
+  ICONOS DEL MENU DE NAVEGACIÓN
+   ========================================================= */
+
 .cliente{
     
     align-items: self-end;
@@ -82,14 +96,19 @@ nav ul li a{
     margin-right:20px;
     cursor: pointer;
 }
-
-/*Contenido de la marca y la información del producto*/
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
 
 main{
     width: 80%;
     margin: auto;
     display: flex;
 }
+
+/* =========================================================
+   CONTENEDOR DE LA MARCA (TEXTO)
+   ========================================================= */
 
 .marca{
     padding-right: 50px;
@@ -117,6 +136,15 @@ main{
     margin-bottom: 20px;
 }
 
+.marca button{
+    background-color: #ffffffff;
+}
+
+
+/* =========================================================
+   CONTENEDOR CON LA IMG DEL PRODUCTO
+   ========================================================= */
+
 .producto{
     padding: 10px;
     width: 500px;
@@ -141,9 +169,10 @@ main{
     margin-bottom:10px;
 }
 
-.marca button{
-    background-color: #ffffffff;
-}
+/* =========================================================
+   ESTILO BOTONES
+   ========================================================= */
+
 button{
 
     background-color:var(--secundario);
