@@ -191,3 +191,143 @@ button:hover{
 
     border: 2px solid;
 }
+
+/* =========================================================
+   DISEÑO RESPONSIVE - MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       MENÚ DE NAVEGACIÓN
+       ----------------------------------------------------- */
+
+    nav {
+        width: 90%;
+        height: auto;
+        min-height: 4.5rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        flex-wrap: wrap;    /* Permite que los elementos del menú se ajusten a varias líneas si es necesario*/
+        gap: 1rem;
+    }
+/*Titulo del menu*/
+    nav h1 {
+        font-size: 1.5rem;
+    }
+/*La lista del menu*/
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /*Si no cabe en una sola línea, se ajusta a varias*/
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem; /*Ajustamos el tamaño de fuente*/
+    }
+
+    #selected {
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* -----------------------------------------------------
+       ICONOS DEL MENÚ
+       ----------------------------------------------------- */
+
+    .cliente {
+        display: flex;
+        align-items: center; /*centramos iconos*/
+        margin-left: auto;
+    }
+
+    .cliente img {
+        width: 1.3rem;
+        margin-right: 0.5rem;
+    }
+
+    /* -----------------------------------------------------
+       CONTENEDOR PRINCIPAL
+       ----------------------------------------------------- */
+
+    main {
+        width: 90%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column; /*Cambiamos la dirección del flexbox*/
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* -----------------------------------------------------
+       MARCA
+       ----------------------------------------------------- */
+
+    .marca {
+        width: 100%;
+        padding-right: 0;  /*En escritorio estan al lado, aqui no hace falta*/
+        text-align: center;
+    }
+
+    .marca h2 {
+        font-size: 2.2rem;
+    }
+
+    .marca h1 {
+        font-size: 5rem;
+        line-height: 1;
+        margin: 0.5rem 0;
+    }
+
+    .marca h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .marca p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    /* -----------------------------------------------------
+       BOTÓN SABER MÁS
+       ----------------------------------------------------- */
+
+    .marca button {
+        margin: 1.5rem auto 0; /*Espacio arriba y centrado*/
+    }
+
+    /* -----------------------------------------------------
+       PRODUCTO
+       ----------------------------------------------------- */
+
+    .producto {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .producto img {
+        width: 100%;
+        max-width: 15rem;
+        height: auto;
+        max-height: 20rem;
+        object-fit: contain;
+    }
+
+    .producto p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .producto button {
+        margin-top: 1rem;
+    }
+}
