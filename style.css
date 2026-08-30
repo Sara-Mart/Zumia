@@ -41,15 +41,15 @@ body{
    ========================================================= */
 
 nav{
-    height: 10vh;
+    height: 4.5rem;
     width: 80%;
-    margin: 20px auto;
+    margin: 2rem auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ffffffff;
     box-shadow: 5px 5px 15px rgba(43, 165, 74, 0.571);
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 
 nav h1{
@@ -76,10 +76,10 @@ nav ul li a{
 
 #selected{
     
-    border: solid 2px;
-    border-radius: 40px;
+    border: solid 0.1rem;
+    border-radius: 1rem;
     border-color: var(--principal);
-    padding: 5px;
+    padding: 0.4rem;
 }
 
 /* =========================================================
@@ -93,7 +93,7 @@ nav ul li a{
 }
 .cliente img{
     width: 1.5rem;
-    margin-right:20px;
+    margin-right:1rem;
     cursor: pointer;
 }
 /* =========================================================
@@ -111,7 +111,7 @@ main{
    ========================================================= */
 
 .marca{
-    padding-right: 50px;
+    padding-right: 2rem;
 }
 
 .marca h2{
@@ -127,13 +127,13 @@ main{
 
 .marca h3{
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color:var(--terciario);
 }
 
 .marca p{
     color: var(--principal);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .marca button{
@@ -146,21 +146,21 @@ main{
    ========================================================= */
 
 .producto{
-    padding: 10px;
-    width: 500px;
-    height: 550px;
+    padding: 1rem;
+    width: 20rem;
+    height:36rem;
     background-color:#ffffffff;
-    border-radius: 20px;
+    border-radius: 1rem;
     box-shadow: 5px 5px 15px rgba(11, 11, 11, 0.571);
 
     
 }
 .producto img{
 
-    height: 400px;
+    height: 25rem;
     display: block;
     margin: auto;
-    margin-bottom:20px;
+    margin-bottom:1rem;
 }
 
 .producto p{
