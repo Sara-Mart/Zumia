@@ -189,8 +189,16 @@ button{
 
 button:hover{
 
-    border: 2px solid;
+    /*border: 2px solid;*/
 }
+
+/* =========================================================
+   MENU HAMBURGUESA
+   ========================================================= */
+.menu-toggle {
+    display: none;
+}
+
 
 /* =========================================================
    DISEÑO RESPONSIVE - MÓVIL
@@ -209,7 +217,11 @@ button:hover{
         margin: 1rem auto;
         padding: 1rem;
         flex-wrap: wrap;    /* Permite que los elementos del menú se ajusten a varias líneas si es necesario*/
-        gap: 1rem;
+        /*gap: 1rem;   /* Espacio entre los elementos del menú*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative; /* Para posicionar el menú desplegable */
     }
 /*Titulo del menu*/
     nav h1 {
@@ -217,14 +229,20 @@ button:hover{
     }
 /*La lista del menu*/
     nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap; /*Si no cabe en una sola línea, se ajusta a varias*/
-        gap: 0.5rem;
+        gap: 1rem;
+        padding-top: 1rem;
     }
 
     nav ul li {
         margin: 0;
+        text-align: center;
     }
 
     nav ul li a {
@@ -240,9 +258,7 @@ button:hover{
        ----------------------------------------------------- */
 
     .cliente {
-        display: flex;
-        align-items: center; /*centramos iconos*/
-        margin-left: auto;
+        display: none; /* Ocultamos los iconos en móvil */
     }
 
     .cliente img {
@@ -330,4 +346,27 @@ button:hover{
     .producto button {
         margin-top: 1rem;
     }
+
+    /*MENU HAMBURGUESA*/
+
+    .menu-toggle {
+    display: block;
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: var(--principal);
+    }
+
+    nav ul {
+    display: none;
+    }
+
+    nav ul.active {
+    display: flex;
+    }
+      
 }
